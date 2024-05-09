@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
-const form = document.getElementById('form');
+const form = document.getElementById("form");
 
-form.onsubmit = function() {
-  document.getElementById('form').reset();
+form.onsubmit = function () {
+  document.getElementById("form").reset();
 
   return false;
 };
 
-window.addEventListener('hashchange', () => {
-  if (window.location.hash === '#menu') {
-    document.body.classList.add('page__body--with-menu');
+window.addEventListener("hashchange", () => {
+  if (window.location.hash === "#menu") {
+    document.body.classList.add("page__body--with-menu");
   } else {
-    document.body.classList.remove('page__body--with-menu');
+    document.body.classList.remove("page__body--with-menu");
   }
 });
